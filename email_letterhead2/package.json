@@ -1,0 +1,19 @@
+{
+  "name": "letterhead",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass --watch css/style.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennethryandy/email-letterhead/issues"
+  },
+  "homepage": "https://github.com/kennethryandy/email-letterhead#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

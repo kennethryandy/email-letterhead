@@ -1,0 +1,159 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: between;
+}
+
+body {
+  font-family: "Segoe UI", "Allura", -apple-system, BlinkMacSystemFont, Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  margin: 40px auto;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 56px 0px;
+  p {
+    margin: 24px 0px;
+    font-weight: 500;
+  }
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  p {
+    font-weight: 500;
+  }
+}
+section {
+  margin-bottom: 40px;
+}
+.content {
+  p {
+    text-align: justify;
+    line-height: 2;
+    font-weight: 500;
+  }
+}
+.signature {
+  p {
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  .recipient {
+    .sign {
+      font-size: 3.6em;
+      font-family: "Allura";
+      margin: 0px;
+    }
+  }
+  .sender {
+    p {
+      margin: 0px;
+      line-height: 2;
+    }
+    .sender-name {
+      font-weight: normal;
+      color: $gray;
+    }
+  }
+}
+footer {
+  .container {
+    .footer-inner {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      .info {
+        display: flex;
+        align-content: center;
+        .info-details {
+          margin: auto 0px auto 16px;
+          p {
+            font-weight: 500;
+          }
+          a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #000;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        .info-icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          background-color: $yellow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .arrow-icon {
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+  }
+  .long-rect {
+    margin-top: 74px;
+    background-color: $pink;
+    width: 100%;
+    height: 48px;
+  }
+}
+// Container
+.container {
+  width: 961px;
+  min-width: 961px;
+  margin: 0 auto;
+  //   @media (max-width: $widescreen) {
+  //     width: 1153px;
+  //     min-width: 1153px;
+  //   }
+  @media (max-width: $desktop) {
+    width: 961px;
+    min-width: 961px;
+  }
+  @media (max-width: $laptop) {
+    width: 767px;
+    min-width: 767px;
+  }
+  @media (max-width: $tablet) {
+    width: 481px;
+    min-width: 481px;
+  }
+  @media (max-width: $mobile) {
+    width: 320px;
+    min-width: 320px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+}
+.container-fluid {
+  padding: 0 48px;
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+}
